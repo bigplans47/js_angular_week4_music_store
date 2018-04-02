@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Album } from '../album.model';
+import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-marketplace',
@@ -21,4 +24,10 @@ export class MarketplaceComponent  {
    new Album("Axis Bold As Love", "The Jimi Hendrix Experience",
        "Second studio album by the English-American band, released in 1967.", 6)
   ];
+
+  constructor(private router: Router) {}
+
+  goToDetailPage(param: Album) {
+    this.router.navigate(['albums', param.id])
+  };
 }
