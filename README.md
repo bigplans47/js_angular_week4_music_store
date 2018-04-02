@@ -1,3 +1,23 @@
+We'll follow a similar process in Angular. We can create a new file called api-keys.ts in the src/app directory. Then, we can place our Firebase credentials (the information Firebase provided in that modal window), like this:
+
+src/app/api-keys.ts
+export var masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };
+Your file should have your specific Firebase credentials and other information here, instead of xxxx.
+
+Then, we can ignore this file in .gitignore:
+
+.gitignore
+...
+#Firebase credentials
+/src/app/api-keys.ts
+...
+
 # RecordStore
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
