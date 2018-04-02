@@ -5,12 +5,18 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
+import { AboutComponent } from './about/about.component';
+import { MarketplaceComponent } from './marketplace/marketplace.component';
+import { AlbumDetailComponent } from './album-detail/album-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    AboutComponent,
+    MarketplaceComponent,
+    AlbumDetailComponent
   ],
   imports: [
     BrowserModule,
