@@ -19,12 +19,8 @@ export class AlbumService {
     this.albums.push(newAlbum);
   }
 
-  albumById(id: number) {
-    // for (var i = 0; i < ALBUMS.length - 1; i++) {
-    //   if (ALBUMS[i].id === id) {
-    //     return ALBUMS[i];
-    //   }
-    // }
+  albumById(albumId: string) {
+    return this.database.object('albums/' + albumId);
   }
 
 }

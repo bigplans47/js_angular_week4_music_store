@@ -1,9 +1,8 @@
 <div class="card">
   <div class="card-body">
-    <h1 class="card-title">{{albumToShow.title}}</h1>
-    <h4>ARTIST: {{albumToShow.artist}}</h4>
-    <h4>DESCRIPTION: {{albumToShow.description}}</h4>
-    <h4>ID: {{albumToShow.id}}</h4>
+    <h1 class="card-title">{{(albumToShow | async)?. title}}</h1>
+    <h4>ARTIST: {{(albumToShow | async)?.artist}}</h4>
+    <h4>DESCRIPTION: {{(albumToShow | async)?.description}}</h4>
   </div>
-  
+
 </div>
