@@ -32,4 +32,9 @@ export class AlbumService {
     });
   }
 
+  deleteThis(localAlbum) {
+    var albumInFirebase = this.albumById(localAlbum.$key);
+    albumInFirebase.remove(); 
+  }
+
 }
