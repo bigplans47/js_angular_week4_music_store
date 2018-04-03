@@ -2,5 +2,6 @@
   <h4>EDIT</h4>
   <input [(ngModel)]="selectedAlbum.title" placeholder="TITLE"><br>
   <input [(ngModel)]="selectedAlbum.artist" placeholder="ARTIST"><br>
-  <input [(ngModel)]="selectedAlbum.title" placeholder="DESCRIPTION">
+  <input [(ngModel)]="selectedAlbum.description" placeholder="DESCRIPTION">
+  <button (click)="beginUpdateAnAlbum(selectedAlbum)">UPDATE</button>
 </div>
