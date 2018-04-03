@@ -3,5 +3,9 @@
   <input #newTitle placeholder="Title"><br>
   <input #newArtist placeholder="Artist"><br>
   <input #newDescription placeholder="Description">
+  <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value); newTitle.value=''; newArtist.value=''; newDescription.value=''" class="btn btn-success">Add</button>
 </div>
-<button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value); newTitle.value=''; newArtist.value=''; newDescription.value=''" class="btn btn-success">Add</button>
+<br>
+<div class="card">
+  <app-marketplace></app-marketplace>
+</div>
